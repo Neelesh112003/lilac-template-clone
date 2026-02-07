@@ -10,7 +10,7 @@ The objective was to first **accurately clone an existing homepage UI**, and the
 In this phase, the homepage of the **Lilac Squarespace Template** was cloned with high visual accuracy.
 
 ###  UI Clone Screenshots
-![Clone Full Page](/clone-screenshot.png)
+![Clone Full Page](./public/clone-screenshot.png)
 
 ##  Part 2: Custom Redesign (Deployed)
 

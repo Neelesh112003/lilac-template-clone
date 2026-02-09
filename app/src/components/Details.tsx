@@ -40,9 +40,9 @@ export default function Details() {
           <div className="space-y-6 max-w-md">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-light text-[#B4846C]">
               Dr. Maya Reynolds, PsyD
-              <h4 className="text-xl md:text-2xl lg:text-3xl mt-2">
+              <p className="text-xl md:text-2xl lg:text-3xl mt-2">
               Licensed Clinical Psychologist 
-              </h4>
+              </p>
             </h3>
 
             <div className="space-y-1">

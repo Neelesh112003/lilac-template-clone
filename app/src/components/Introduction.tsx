@@ -29,72 +29,71 @@ export default function Introduction() {
   }, []);
 
   return (
-    <div 
+    <section
+    id='about'
       ref={sectionRef}
-      className="min-h-screen bg-[#e8e4df] flex items-center"
+      className="min-h-screen bg-[#f3d9b9] flex items-center py-12 md:py-20 px-4 md:px-8"
     >
-      <div className="w-full flex">
-        <div className="w-3/5 flex items-center justify-center px-12 lg:px-20">
-          <div
-            className={`flex flex-col space-y-8 max-w-xl transition-all duration-1000 ease-out ${
-              isVisible
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-20'
-            }`}
-          >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#2d4a3e] leading-tight">
-              Hi, I'm Lilac.
-            </h2>
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+          {/* Left side - Content */}
+          <div className="w-full lg:w-3/5 flex items-center justify-center">
+            <div
+              className={`flex flex-col space-y-6 md:space-y-8 max-w-2xl transition-all duration-1000 ease-out ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-20'
+              }`}
+            >
+              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-[#B4846C] leading-tight">
+                Hi, I'm Dr. Maya Reynolds, PsyD
+              </h2>
 
-            <p className="text-lg md:text-xl text-[#3d4a42] leading-relaxed font-light">
-              I'm committed to providing a safe and supportive environment
-              where we can explore your thoughts, feelings, and behaviors. With
-              empathy and guidance, we'll work together to navigate the
-              challenges life throws your way.
-            </p>
+              <div className="text-base md:text-lg lg:text-xl text-[#B4846C] leading-relaxed font-light space-y-4">
+                <p>
+                  I'm a licensed clinical psychologist based in Santa Monica, California. I work with adults who feel overwhelmed by anxiety, trauma, burnout, and the long-term effects of chronic stress.
+                </p>
+                <p>
+                  My approach is warm, collaborative, and grounded. Sessions are structured enough to feel supportive, while still allowing space for reflection and depth. I integrate evidence-based practices including CBT, EMDR, mindfulness, and body-oriented techniques to address both emotional and physiological experiences.
+                </p>
+                <p>
+                  My goal is not just symptom relief, but helping you build insight, resilience, and a stronger relationship with yourself over time.
+                </p>
+              </div>
 
-            <div>
-              <button className="px-8 py-4 border-2 border-[#2d4a3e] text-[#2d4a3e] font-medium tracking-wide hover:bg-[#2d4a3e] hover:text-white transition-all duration-300 flex items-center gap-2 group">
-                LET'S CHAT
-                <span className="transform group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-2/5 flex items-center justify-start relative pl-0 pr-12">
-          <div
-            className={`relative w-full max-w-2xl transition-all duration-1000 ease-out delay-200 ${
-              isVisible
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-20'
-            }`}
-          >
-            
-            <div className="relative z-10 w-112.5 h-160 -mb-32 mt-20">
-              <div className="w-full h-full rounded-t-full overflow-hidden bg-[#c8d5d9]">
-                <img
-                  src="Introduction1.webp"
-                  alt="Purple and pink lilac flowers"
-                  className="w-full h-full object-cover object-center"
-                />
+              <div>
+                <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-[#B4846C] text-[#B4846C] font-medium tracking-wide hover:bg-[#B4846C] hover:text-white transition-all duration-300 flex items-center gap-2 group">
+                  LET'S CHAT
+                  <span className="transform group-hover:translate-x-1 transition-transform">
+                    →
+                  </span>
+                </button>
               </div>
             </div>
+          </div>
 
-            <div className="relative z-20 w-80 h-80 ml-auto mr-0 mb-5">
-              <div className="w-full h-full rounded-full overflow-hidden bg-[#c8d5d9] ">
-                <img
-                  src="Introduction2.webp"
-                  alt="White hydrangea flowers"
-                  className="w-full h-full object-cover object-center"
-                />
+        
+          <div className="w-full lg:w-2/5 flex items-center justify-center">
+            <div
+              className={`relative transition-all duration-1000 ease-out delay-200 ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-20'
+              }`}
+            >
+              <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-112.5 lg:h-112.5">
+                <div className="w-full h-full rounded-full overflow-hidden bg-[#c8d5d9] shadow-lg flex items-center justify-center">
+                  <img
+                    src="Dr.Maya-Reynolds.png"
+                    alt="Dr. Maya Reynolds"
+                    className="w-full h-full object-cover object-center scale-100"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

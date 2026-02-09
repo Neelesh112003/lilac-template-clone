@@ -6,19 +6,21 @@ import GetStarted from './src/components/GetStarted';
 import TherapyHero from './src/components/HeroSection1';
 import FulfillingLife from './src/components/HeroSection2';
 import Introduction from './src/components/Introduction';
+import MyOffice from './src/components/MyOffice';
 import Navbar from './src/components/Navbar';
 import NotAlone from './src/components/NotAlone';
 import MySpecialties from './src/components/Specialties';
 
 export default function Home() {
   return (
-    <div className='bg-[#fbf6f1]'>
+    <div>
       <Navbar />
       <TherapyHero />
       <FulfillingLife />
       <MySpecialties />
       <NotAlone />
       <Introduction />
+      <MyOffice />
       <FAQs />
       <ProfessionalBackground />
       <GetStarted />

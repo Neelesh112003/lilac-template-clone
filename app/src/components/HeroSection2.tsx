@@ -24,34 +24,29 @@ export default function FulfillingLife() {
   return (
     <div
       ref={sectionRef}
-      className="bg-[#e8e4df] flex items-center h-[85vh]"
+      className="bg-[#f3d9b9] flex items-center min-h-screen lg:h-[85vh]"
     >
-      <div className="w-full h-full flex">
-        <div className="w-1/2 flex items-center justify-center px-12 lg:px-20 mt-20">
+      <div className="w-full h-full flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-12 lg:px-20 py-8 lg:py-0 lg:mt-20">
           <div
-            className={`flex flex-col space-y-6 max-w-xl h-full py-16
+            className={`flex flex-col space-y-6 max-w-xl w-full
             transition-all duration-1000 ease-out
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#2d4a3e] leading-tight">
-              Live a fulfilling life.
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-light text-[#B4846C] leading-tight">
+              You can look "fine" on the outside and still feel overwhelmed inside.
             </h2>
 
-            <p className="text-lg md:text-xl text-[#3d4a42] leading-relaxed font-light">
-              Life can be challenging—especially when you're trying to balance
-              your personal and professional life.
+            <p className="text-lg md:text-xl text-[#B4846C] leading-relaxed font-light">
+              Many of my clients are thoughtful, capable, and successful—yet feel constantly tense, exhausted, or stuck in overthinking. You may be functioning well on the surface while privately dealing with anxiety, panic, poor sleep, or a lingering sense of unease.<br /><br />
+              Therapy can help you slow down, understand what's happening beneath the surface, and develop ways to feel more grounded and regulated in your daily life.
             </p>
 
-            <p className="text-lg md:text-xl text-[#3d4a42] leading-relaxed font-light">
-              It's easy to feel like you're alone in facing these challenges, but
-              I want you to know that I'm here to help.
-            </p>
-
-            <div className="pt-6 mt-auto border-t">
+            <div className="pt-6 border-t border-[#B4846C]/30">
               <button
                 className="
                   w-full
-                  text-[#2d4a3e]
+                  text-[#B4846C]
                   py-4
                   font-medium
                   tracking-wide
@@ -71,13 +66,13 @@ export default function FulfillingLife() {
           </div>
         </div>
 
-        <div className="w-1/2 h-full overflow-hidden flex items-end">
+        <div className="w-full lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full overflow-hidden flex items-end">
           <div
             className={`w-full h-full transition-all duration-1000 ease-out delay-200
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"}`}
           >
             <img
-              src="/HeroSection2.webp"
+              src="HeroSection2new.jpg"
               alt="Coffee, notebook, and lilac flowers on a desk"
               className="w-full h-full object-cover"
             />

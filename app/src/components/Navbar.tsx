@@ -5,10 +5,12 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsVisible(window.scrollY === 0);
+      setMenuOpen(false);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -17,28 +19,47 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-16 py-5
-      transition-transform duration-300 ease-in-out z-50
-      bg-[#fbf6f1]
+      className={`fixed top-0 left-0 right-0 z-50 bg-[#faf8f5]
+      transition-transform duration-300
       ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
-      <div className="max-w-350 mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-5 flex items-center justify-between">
+        
         <Link
           href="/"
-          className="text-[24px] md:text-[28px] lg:text-[32px] font-medium text-[#2d2d2d]"
+          className="text-[22px] md:text-[28px] lg:text-[32px] font-medium text-[#B4846C]"
         >
-          Lilac Template
+          Dr. Maya Reynolds
         </Link>
 
-        <div className="flex gap-8 md:gap-12 lg:gap-16 text-[#2d2d2d]">
-          <Link href="/blog" className="hover:opacity-70 transition-opacity">
-            Blog
+        <div className="hidden md:flex gap-12 text-[#2C3731]">
+          <Link href="#about" className="hover:text-[#B4846C] transition-colors">
+            About
           </Link>
-          <Link href="/contact" className="hover:opacity-70 transition-opacity">
+          <Link href="#contact" className="hover:text-[#B4846C] transition-colors">
             Contact
           </Link>
         </div>
+
+        <button
+          className="md:hidden text-[#B4846C]"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
       </div>
+
+      {menuOpen && (
+        <div className="md:hidden bg-[#FAF8F5] px-6 pb-6 flex flex-col gap-4 text-[#2C3731]">
+          <Link href="#about" onClick={() => setMenuOpen(false)} className="hover:text-[#B4846C] transition-colors">
+            About
+          </Link>
+          <Link href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-[#B4846C] transition-colors">
+            Contact
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

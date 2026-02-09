@@ -31,7 +31,7 @@ export default function GetStarted() {
   return (
     <div 
       ref={sectionRef}
-      className=" bg-[#6B6A2E] flex items-center justify-center py-20 px-4"
+      className=" bg-[#eee18b] flex items-center justify-center py-20 px-4"
     >
       <div
         className={`w-2/5 text-center items-center mt-15 transition-all duration-1000 ease-out ${
@@ -40,19 +40,17 @@ export default function GetStarted() {
             : 'opacity-0 translate-y-20'
         }`}
       >
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-white mb-8">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-8">
           Get started today.
         </h2>
 
-        <p className="text-lg md:text-xl lg:text-xl text-white font-light leading-relaxed mb-12 max-w-3xl mx-auto">
-          Ready to take the first step towards a happier, healthier you?
-          Contact me to book your first session. I look forward to starting this
-          therapeutic journey with you.
+        <p className="text-lg md:text-xl lg:text-xl text-black font-light leading-relaxed mb-12 max-w-3xl mx-auto">
+          If you’re ready to explore therapy in a supportive, grounded space, I invite you to reach out. Finding the right therapist matters—and it’s okay to take the first step at your own pace.
         </p>
 
         <div className="flex justify-center">
-          <button className="px-8 py-4 border-2 border-white text-white font-medium tracking-wide hover:bg-white hover:text-[#7a7d5c] transition-all duration-300 flex items-center gap-2 group">
-            GET IN TOUCH
+          <button className="px-8 py-4 border-2 border-black text-black font-medium tracking-wide hover:bg-white hover:text-[#7a7d5c] transition-all duration-300 flex items-center gap-2 group">
+            REQUEST A CONSULTATION
             <span className="transform group-hover:translate-x-1 transition-transform">
               →
             </span>

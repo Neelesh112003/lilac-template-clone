@@ -30,11 +30,11 @@ export default function NotAlone() {
   }, []);
 
   const challenges = [
-    "Persistent feelings of sadness or hopelessness",
-    "Trouble focusing or making decisions",
-    "Difficulty maintaining relationships",
-    "Feeling constantly exhausted or unmotivated",
-    "A pervasive sense of being overwhelmed"
+    "Constant worry or feeling “on edge”",
+    "Panic or physical anxiety symptoms",
+    "Emotional exhaustion or burnout",
+    "Trauma that still affects your sense of safety",
+    "Difficulty slowing down or resting"
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function NotAlone() {
             />
           </div>
         </div>
-        <div className="w-1/2 bg-[#c4c0d1] flex items-center justify-center px-12 lg:px-20">
+        <div className="w-1/2 bg-[#eee18b] flex items-center justify-center px-12 lg:px-20">
           <div
             className={`flex flex-col space-y-8 max-w-2xl transition-all duration-1000 ease-out ${
               isVisible
@@ -66,19 +66,19 @@ export default function NotAlone() {
                 : 'opacity-0 translate-y-20'
             } mt-30`}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#2d4a3e] leading-tight mt-15">
-              You don't have to do this all <em className="italic">alone.</em>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#B4846C] leading-tight mt-15">
+              You don’t have to navigate this alone. <em className="italic">alone.</em>
             </h2>
 
-            <p className="text-lg md:text-xl text-[#3d4a42] font-light">
-              If you are facing any of these, there's hope:
+            <p className="text-lg md:text-xl text-[#B4846C] font-light">
+              If you’re experiencing:
             </p>
 
             <ul className="space-y-4">
               {challenges.map((challenge, index) => (
                 <li 
                   key={index}
-                  className="text-base md:text-lg text-[#3d4a42] font-light flex items-start"
+                  className="text-base md:text-lg text-[#B4846C] font-light flex items-start"
                 >
                   <span className="mr-3">•</span>
                   <span>{challenge}</span>
@@ -86,16 +86,15 @@ export default function NotAlone() {
               ))}
             </ul>
 
-            <p className="text-lg md:text-xl text-[#3d4a42] leading-relaxed font-light">
-              With empathy and guidance, we'll work together to navigate the
-              challenges life throws your way.
+            <p className="text-lg md:text-xl text-[#B4846C] leading-relaxed font-light">
+              Therapy can offer a steady, supportive space to understand what’s happening and begin meaningful change.
             </p>
 
             <div className="pt-6 mt-4 border-t mb-5">
               <button
                 className="
                   w-full
-                  text-[#2d4a3e]
+                  text-[#B4846C]
                   py-4
                   font-medium tracking-wide
                   flex items-center justify-center gap-2
@@ -105,7 +104,7 @@ export default function NotAlone() {
                   group
                 "
               >
-                WORK WITH ME
+                START THERAPY
                 <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>

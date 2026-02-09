@@ -25,24 +25,24 @@ export default function MySpecialties() {
 
   const specialties = [
     {
-      title: "Self-Esteem",
+      title: "Anxiety & Panic",
       description:
-        "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
-      image: "/Specialties1.webp",
+        "Support for chronic worry, panic attacks, racing thoughts, and physical tension. We’ll work on both the mental patterns and the body’s stress response so anxiety no longer runs your life.",
+      image: "Specialties1new.jpg",
       delay: "delay-0",
     },
     {
-      title: "Relationships",
+      title: "Trauma & EMDR Therapy",
       description:
-        "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
-      image: "/Specialties2.webp",
+        "Trauma-informed therapy for single-incident and complex trauma. Using EMDR, mindfulness, and body-based techniques, we move at a pace that prioritizes safety, stabilization, and nervous system regulation.",
+      image: "/Specialties2new.jpg",
       delay: "delay-200",
     },
     {
-      title: "Burnout",
+      title: "Burnout, Perfectionism & High Pressure",
       description:
-        "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
-      image: "/Specialties3.webp",
+        "For professionals, creatives, and entrepreneurs who feel depleted after years of pushing through stress. Therapy becomes a space to reconnect with yourself and build more sustainable ways of living and working.",
+      image: "/Specialties3new.jpg",
       delay: "delay-400",
     },
   ];
@@ -50,11 +50,11 @@ export default function MySpecialties() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen bg-[#fbf6f1] py-20 px-2 md:px-6"
+      className="min-h-screen bg-[#FAF8F5] py-20 px-2 md:px-6"
     >
       <div className="max-w-350 mx-auto">
         <h2
-          className={`text-5xl md:text-6xl lg:text-6xl font-light text-[#2d4a3e] text-center mb-16
+          className={`text-5xl md:text-6xl lg:text-6xl font-light text-[#B4846C] text-center mb-16
           transition-all duration-1000 ease-out
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
         >
@@ -65,15 +65,15 @@ export default function MySpecialties() {
           {specialties.map((specialty) => (
             <div
               key={specialty.title}
-              className={`bg-[#d4cfc9] border border-[#2d4a3e] p-8 flex flex-col h-full
+              className={`bg-[#f3d9b9] border border-[#B4846C] p-8 flex flex-col h-full
               transition-all duration-1000 ease-out ${specialty.delay}
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
             >
-              <h3 className="text-2xl md:text-3xl font-light text-[#2d4a3e] mb-6">
+              <h3 className="text-2xl md:text-3xl font-light text-[#B4846C] mb-6">
                 {specialty.title}
               </h3>
 
-              <p className="text-base md:text-lg text-[#3d4a42] leading-relaxed font-light mb-10 grow">
+              <p className="text-base md:text-lg text-[#B4846C] leading-relaxed font-light mb-10 grow">
                 {specialty.description}
               </p>
 
